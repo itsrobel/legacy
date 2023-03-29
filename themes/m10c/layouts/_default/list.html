@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <div class="toggle-container">
+  <!-- <h1>{{ .Title }}</h1>
+  {{partial "toggle.html" $}} -->
+  </div>
+  <article class="post-list-container">
+    <ul class="posts-list">
+      {{ range where .Paginator.Pages "Type" "!=" "page" }}
+        <li class="posts-list-item">
+          <div class="post-information-container">
+
+      {{ if .Params.image}}
+      <a href="{{.Permalink}}" >
+
+      <div class="wrapping-image">
+        <img class="post-image" src="{{ .Params.image }}"/>
+
+
+      </div>
+      </a>
+      {{ end }}
+          </div>
+          <div>
+            <a href="{{ .Permalink }}">
+
+            <h1 class="posts-list-item-title" >{{ .Title }}</h1>
+          </a>
+          <span class="posts-list-item-description">
+            {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+            {{ .PublishDate.Format "Jan 2, 2006" }}
+            -
+            {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+            {{ .ReadingTime }} min read
+          </span>
+          {{ .Summary}}
+          </div>
+        </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" $ }}
+  </article>
+{{ end }}

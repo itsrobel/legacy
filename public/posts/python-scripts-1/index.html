@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Pythonic activies - tik tac toe // Robel Schwarz</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Robel Schwarz" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://itsrobel.tech/css/main.min.85d6300e2288bc21171a4dc74d4bddc4dd09c59dee6e6a03190eb6795e02ba37.css" />
+    
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pythonic activies - tik tac toe"/>
+<meta name="twitter:description" content="A while ago during my first year of comp sci, I was tasked to create a game of tik tac toe. While not a complex procedure, I decided to make it more complicated for myself. In challenging my younger self, I went through 3 development phases.
+The base game I do not have the files for the base game; if I find the Replit file, I will make sure to fill this section of the story."/>
+
+    <meta property="og:title" content="Pythonic activies - tik tac toe" />
+<meta property="og:description" content="A while ago during my first year of comp sci, I was tasked to create a game of tik tac toe. While not a complex procedure, I decided to make it more complicated for myself. In challenging my younger self, I went through 3 development phases.
+The base game I do not have the files for the base game; if I find the Replit file, I will make sure to fill this section of the story." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://itsrobel.tech/posts/python-scripts-1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-22T00:00:00+00:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://itsrobel.tech"><img class="app-header-avatar" src="/me.JPG" alt="Robel Schwarz" /></a>
+      <h1>Robel Schwarz</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Evil triumphs when good men do nothing</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/itsrobel" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://instagram.com/itsrobel_black" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-instagram">
+  <title>Instagram</title>
+  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+</svg>
+          </a>
+        
+          <a href="mailto:me@itsrobel.tech" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-mail">
+  <title>Email</title>
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Pythonic activies - tik tac toe</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Dec 22, 2022
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://itsrobel.tech/tags/development/">development</a>
+              <a class="tag" href="https://itsrobel.tech/tags/python/">python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="a-while-ago">A while ago</h2>
+<p>during my first year of comp sci, I was tasked to create a game of tik tac toe. While not a complex procedure, I decided to make it more complicated for myself. In challenging my younger self, I went through 3 development phases.</p>
+<h3 id="the-base-game">The base game</h3>
+<p>I do not have the files for the base game; if I find the Replit file, I will make sure to fill this section of the story. Until then, my dear reader, you can use your wonderful imagination.</p>
+<h3 id="adding-features">Adding &ldquo;Features.&rdquo;</h3>
+<p>the more complicated procedure that I eluded to before was adding variable board sizing. This dynamic board sizing was an exercise in mental gymnastics.</p>
+<p>The game was initialized using a relatively simple setup. Definition vars as needed and whatnot. The worst thing about my original code was my gosh darn global vars. Do not use or make anything like this. I want to cry reading back at my old code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#fe8019">def</span> <span style="color:#fabd2f">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">import</span> os
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">global</span> b
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">def</span> <span style="color:#fabd2f">cls</span>():
+</span></span><span style="display:flex;"><span>        os<span style="color:#fe8019">.</span>system(<span style="color:#b8bb26">&#39;cls&#39;</span> <span style="color:#fe8019">if</span> os<span style="color:#fe8019">.</span>name<span style="color:#fe8019">==</span><span style="color:#b8bb26">&#39;nt&#39;</span> <span style="color:#fe8019">else</span> <span style="color:#b8bb26">&#39;clear&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    b <span style="color:#fe8019">=</span> <span style="color:#fabd2f">int</span>(<span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34;how big do you want the board: &#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    col_sto <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>    ls_turn <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>    players <span style="color:#fe8019">=</span> [<span style="color:#b8bb26">&#39;x&#39;</span>,<span style="color:#b8bb26">&#39;o&#39;</span>]
+</span></span><span style="display:flex;"><span>    board <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>    turn_count <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, b):
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, b):
+</span></span><span style="display:flex;"><span>            board<span style="color:#fe8019">.</span>append(<span style="color:#b8bb26">&#34;-&#34;</span>)
+</span></span><span style="display:flex;"><span>    game_active <span style="color:#fe8019">=</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">while</span> game_active <span style="color:#fe8019">==</span> <span style="color:#fe8019">True</span>:
+</span></span><span style="display:flex;"><span>        test <span style="color:#fe8019">=</span> <span style="color:#fabd2f">int</span>(<span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34;:&#34;</span>)) <span style="color:#fe8019">-</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>        ls_turn<span style="color:#fe8019">.</span>append(test)
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">while</span> <span style="color:#fabd2f">len</span>(ls_turn) <span style="color:#fe8019">!=</span> <span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(ls_turn)):
+</span></span><span style="display:flex;"><span>            ls_turn <span style="color:#fe8019">=</span> <span style="color:#fabd2f">list</span>(<span style="color:#fabd2f">dict</span><span style="color:#fe8019">.</span>fromkeys(ls_turn))
+</span></span><span style="display:flex;"><span>            test <span style="color:#fe8019">=</span> <span style="color:#fabd2f">int</span>(<span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34; :&#34;</span>))<span style="color:#fe8019">-</span><span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>            ls_turn<span style="color:#fe8019">.</span>append(test)
+</span></span><span style="display:flex;"><span>        board[test] <span style="color:#fe8019">=</span> players[<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">global</span> ls
+</span></span><span style="display:flex;"><span>        ls <span style="color:#fe8019">=</span> [board[x:x <span style="color:#fe8019">+</span> b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board), b)]
+</span></span><span style="display:flex;"><span>        test_ls <span style="color:#fe8019">=</span> [board[x:x <span style="color:#fe8019">+</span> b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board), b)]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">display</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> ls:
+</span></span><span style="display:flex;"><span>                <span style="color:#fabd2f">print</span>(i)
+</span></span><span style="display:flex;"><span>        cls()
+</span></span><span style="display:flex;"><span>        display()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">end_game</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> game_active
+</span></span><span style="display:flex;"><span>            wld <span style="color:#fe8019">=</span> <span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34;would you like to play again[y/n]: &#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> wld <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#34;y&#34;</span>:
+</span></span><span style="display:flex;"><span>            main()
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">else</span>: 
+</span></span><span style="display:flex;"><span>            quit()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">row_allcheck</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> winner
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, b):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> <span style="color:#fabd2f">all</span>(x <span style="color:#fe8019">==</span> ls[<span style="color:#d3869b">0</span>][<span style="color:#d3869b">0</span>] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> ls[<span style="color:#d3869b">0</span>]):
+</span></span><span style="display:flex;"><span>                    <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are equal&#34;)</span>
+</span></span><span style="display:flex;"><span>                    winner <span style="color:#fe8019">=</span> ls[<span style="color:#d3869b">0</span>][<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;-&#39;</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">None</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;x&#39;</span> <span style="color:#fe8019">or</span> <span style="color:#b8bb26">&#39;o&#39;</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> winner
+</span></span><span style="display:flex;"><span>                    
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#else:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are not equal&#34;)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">del</span> ls[<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(winner)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">col_allcheck</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> winner
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> col_sto
+</span></span><span style="display:flex;"><span>            col_sto <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>            ls <span style="color:#fe8019">=</span> [board[x:x<span style="color:#fe8019">+</span>b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board),b)]
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> loop1
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> loop2
+</span></span><span style="display:flex;"><span>            loop1 <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>            loop2 <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#col</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">def</span>  <span style="color:#fabd2f">col_check</span>(loop1):
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>,b):
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">del</span> ls[<span style="color:#d3869b">0</span><span style="color:#fe8019">+</span>loop1][<span style="color:#d3869b">1</span>:b]
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> loop1 <span style="color:#fe8019">&lt;</span> b<span style="color:#fe8019">-</span><span style="color:#d3869b">1</span>:
+</span></span><span style="display:flex;"><span>                loop1 <span style="color:#fe8019">=</span> loop1 <span style="color:#fe8019">+</span><span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">return</span>(ls)
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">def</span> <span style="color:#fabd2f">col_rotate</span>(loop2):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> winner
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>,b):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">del</span> ls[loop2][<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>            loop2 <span style="color:#fe8019">=</span> loop2 <span style="color:#fe8019">+</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">return</span>(ls)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            colcheck <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>            col <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>,b):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>,col):
+</span></span><span style="display:flex;"><span>            ls <span style="color:#fe8019">=</span> col_rotate(loop2)
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>            colcheck <span style="color:#fe8019">=</span> [<span style="color:#fabd2f">tuple</span>(lst) <span style="color:#fe8019">for</span> lst <span style="color:#fe8019">in</span> ls]
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span>(<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(colcheck))<span style="color:#fe8019">==</span><span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(&#34;col_All elements in list are the same&#34;)</span>
+</span></span><span style="display:flex;"><span>            winner <span style="color:#fe8019">=</span> colcheck[<span style="color:#d3869b">0</span>][<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;-&#39;</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;o&#39;</span> <span style="color:#fe8019">or</span> <span style="color:#b8bb26">&#39;x&#39;</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">return</span> winner
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#else:</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(&#34;col_All elements in list are not same&#34;)</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>            ls <span style="color:#fe8019">=</span> [board[x:x<span style="color:#fe8019">+</span>b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board),b)]
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> col <span style="color:#fe8019">&lt;</span> b:
+</span></span><span style="display:flex;"><span>                col <span style="color:#fe8019">=</span> col <span style="color:#fe8019">+</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">dia_allcheck</span>():
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">global</span> winner
+</span></span><span style="display:flex;"><span>            ls <span style="color:#fe8019">=</span> [board[x:x <span style="color:#fe8019">+</span> b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board), b)]
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#dia check 1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(&#34;dia&#34;)</span>
+</span></span><span style="display:flex;"><span>            dia <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>            dia1 <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, b):
+</span></span><span style="display:flex;"><span>                dia1<span style="color:#fe8019">.</span>append(ls[dia][dia])
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> dia <span style="color:#fe8019">&lt;</span> b:
+</span></span><span style="display:flex;"><span>                    dia <span style="color:#fe8019">=</span> dia <span style="color:#fe8019">+</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(dia1)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> (<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(dia1)) <span style="color:#fe8019">==</span> <span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are same&#34;)</span>
+</span></span><span style="display:flex;"><span>                winner <span style="color:#fe8019">=</span> dia1[<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;-&#39;</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">None</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;o&#39;</span> <span style="color:#fe8019">or</span> <span style="color:#b8bb26">&#39;x&#39;</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">return</span> winner
+</span></span><span style="display:flex;"><span>                
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(winner)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#else:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are not same&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            ls <span style="color:#fe8019">=</span> [board[x:x <span style="color:#fe8019">+</span> b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board), b)]
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#dia check 2</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(&#34;dia2&#34;)</span>
+</span></span><span style="display:flex;"><span>            dia2 <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>            dia <span style="color:#fe8019">=</span> <span style="color:#d3869b">0</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, b):
+</span></span><span style="display:flex;"><span>                dia2<span style="color:#fe8019">.</span>append(ls[dia][b <span style="color:#fe8019">-</span> dia <span style="color:#fe8019">-</span> <span style="color:#d3869b">1</span>])
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> dia <span style="color:#fe8019">&lt;</span> b:
+</span></span><span style="display:flex;"><span>                    dia <span style="color:#fe8019">=</span> dia <span style="color:#fe8019">+</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(dia2)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> (<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(dia2)) <span style="color:#fe8019">==</span> <span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are same&#34;)</span>
+</span></span><span style="display:flex;"><span>                winner <span style="color:#fe8019">=</span> dia2[<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>                <span style="color:#928374;font-style:italic">#print(winner)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#else:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#928374;font-style:italic">#print(&#34;All elements in list are not same&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        row_allcheck()
+</span></span><span style="display:flex;"><span>        col_allcheck()
+</span></span><span style="display:flex;"><span>        dia_allcheck()
+</span></span><span style="display:flex;"><span>        players<span style="color:#fe8019">.</span>reverse()
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;o&#39;</span> <span style="color:#fe8019">or</span> winner <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#39;x&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#fabd2f">print</span>(winner <span style="color:#fe8019">+</span> <span style="color:#b8bb26">&#34; wins the game&#34;</span>)
+</span></span><span style="display:flex;"><span>            end_game()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        turn_count <span style="color:#fe8019">=</span> turn_count <span style="color:#fe8019">+</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">if</span> turn_count <span style="color:#fe8019">==</span> b<span style="color:#fe8019">*</span>b:
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> winner <span style="color:#fe8019">!=</span> <span style="color:#b8bb26">&#39;x&#39;</span> <span style="color:#fe8019">and</span> winner <span style="color:#fe8019">!=</span> <span style="color:#b8bb26">&#39;o&#39;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">&#34;looks like a tie&#34;</span>)
+</span></span><span style="display:flex;"><span>            end_game()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    main()    
+</span></span></code></pre></div><p>The single most important line to make the dynamic board sizing is</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    ls <span style="color:#fe8019">=</span> [board[x:x <span style="color:#fe8019">+</span> b] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, <span style="color:#fabd2f">len</span>(board), b)]
+</span></span></code></pre></div><p>This line iterates over the index to create a hashmap. I will not lie. I totally copy pasted this line from StackOverflow from 3 years ago. Oddly enough, it was the only line I copied, but it also happened to be the most significant.</p>
+<h3 id="optmization">Optmization</h3>
+<p>I wrote the original code for my class in April 2020, but later that year, I had a day of free time in October, which I proceeded to spend on pointless activities. I wanted to update my code base. Funny enough, my old code was so bad it was easier for me to create an entirely new program from start to finish.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#fe8019">import</span> os
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">def</span> <span style="color:#fabd2f">cls</span>():
+</span></span><span style="display:flex;"><span>        os<span style="color:#fe8019">.</span>system(<span style="color:#b8bb26">&#39;cls&#39;</span> <span style="color:#fe8019">if</span> os<span style="color:#fe8019">.</span>name<span style="color:#fe8019">==</span><span style="color:#b8bb26">&#34;nt&#34;</span> <span style="color:#fe8019">else</span> <span style="color:#b8bb26">&#39;clear&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">class</span> Main:
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> __init__(self , input_size):
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>active <span style="color:#fe8019">=</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>players <span style="color:#fe8019">=</span> [<span style="color:#b8bb26">&#39;x&#39;</span> , <span style="color:#b8bb26">&#39;o&#39;</span>]
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>board <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>divided_board_array <span style="color:#fe8019">=</span> <span style="color:#fe8019">None</span>
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>size <span style="color:#fe8019">=</span> input_size 
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">init_board</span>(self):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span> , (self<span style="color:#fe8019">.</span>size) <span style="color:#fe8019">**</span> <span style="color:#d3869b">2</span>):
+</span></span><span style="display:flex;"><span>                self<span style="color:#fe8019">.</span>board<span style="color:#fe8019">.</span>append(<span style="color:#b8bb26">&#34;-&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">display</span>(self): 
+</span></span><span style="display:flex;"><span>            self<span style="color:#fe8019">.</span>divided_board_array <span style="color:#fe8019">=</span> [self<span style="color:#fe8019">.</span>board[x:x <span style="color:#fe8019">+</span> self<span style="color:#fe8019">.</span>size] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, (self<span style="color:#fe8019">.</span>size) <span style="color:#fe8019">**</span><span style="color:#d3869b">2</span>, self<span style="color:#fe8019">.</span>size)]
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> self<span style="color:#fe8019">.</span>divided_board_array:
+</span></span><span style="display:flex;"><span>                <span style="color:#fabd2f">print</span>(i)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">player_turn</span>(self):
+</span></span><span style="display:flex;"><span>            turn <span style="color:#fe8019">=</span> <span style="color:#fabd2f">int</span>(<span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34;: &#34;</span>)) <span style="color:#fe8019">-</span> <span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span> (self<span style="color:#fe8019">.</span>board[turn] <span style="color:#fe8019">==</span><span style="color:#b8bb26">&#34;-&#34;</span>): 
+</span></span><span style="display:flex;"><span>                self<span style="color:#fe8019">.</span>board[turn] <span style="color:#fe8019">=</span> self<span style="color:#fe8019">.</span>players[<span style="color:#d3869b">0</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                cls()
+</span></span><span style="display:flex;"><span>                self<span style="color:#fe8019">.</span>display()
+</span></span><span style="display:flex;"><span>                <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">&#34;that space is already taken, player: (&#34;</span> <span style="color:#fe8019">+</span> self<span style="color:#fe8019">.</span>players[<span style="color:#d3869b">0</span>] <span style="color:#fe8019">+</span> <span style="color:#b8bb26">&#34;) pick a different space&#34;</span>)
+</span></span><span style="display:flex;"><span>                self<span style="color:#fe8019">.</span>player_turn()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">col_check</span>(self):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> j <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span> , self<span style="color:#fe8019">.</span>size):
+</span></span><span style="display:flex;"><span>                row <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> self<span style="color:#fe8019">.</span>divided_board_array:
+</span></span><span style="display:flex;"><span>                    row<span style="color:#fe8019">.</span>append(i[j])
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span>(<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(row))<span style="color:#fe8019">==</span><span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span> (row[<span style="color:#d3869b">0</span>] <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#34;-&#34;</span>):
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">row_check</span>(self):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> self<span style="color:#fe8019">.</span>divided_board_array:
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span>(<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(i))<span style="color:#fe8019">==</span><span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span> (i[<span style="color:#d3869b">0</span>] <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#34;-&#34;</span>):
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">def</span> <span style="color:#fabd2f">dia_check</span>(self):
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">def</span> <span style="color:#fabd2f">check_fn</span>(index , tf):
+</span></span><span style="display:flex;"><span>                ls <span style="color:#fe8019">=</span> []
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">for</span> i <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span> , self<span style="color:#fe8019">.</span>size):
+</span></span><span style="display:flex;"><span>                    ls<span style="color:#fe8019">.</span>append(self<span style="color:#fe8019">.</span>board[index])
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span> (tf):
+</span></span><span style="display:flex;"><span>                        index <span style="color:#fe8019">+=</span> self<span style="color:#fe8019">.</span>size <span style="color:#fe8019">+</span><span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                        index <span style="color:#fe8019">+=</span> self<span style="color:#fe8019">.</span>size <span style="color:#fe8019">-</span><span style="color:#d3869b">1</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">if</span> (<span style="color:#fabd2f">len</span>(<span style="color:#fabd2f">set</span>(ls)) <span style="color:#fe8019">==</span> <span style="color:#d3869b">1</span>):
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">if</span>(ls[<span style="color:#d3869b">0</span>] <span style="color:#fe8019">==</span> <span style="color:#b8bb26">&#34;-&#34;</span>):
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span>	<span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                        <span style="color:#fe8019">return</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                    <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">if</span>(check_fn(self<span style="color:#fe8019">.</span>size <span style="color:#fe8019">-</span> <span style="color:#d3869b">1</span> , <span style="color:#fe8019">False</span>) <span style="color:#fe8019">or</span> check_fn(<span style="color:#d3869b">0</span> , <span style="color:#fe8019">True</span>)):
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">return</span> <span style="color:#fe8019">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fe8019">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#fe8019">return</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    inp <span style="color:#fe8019">=</span> <span style="color:#fabd2f">int</span>(<span style="color:#fabd2f">input</span>(<span style="color:#b8bb26">&#34;How big do you want the board?: &#34;</span>))
+</span></span><span style="display:flex;"><span>    game <span style="color:#fe8019">=</span> Main(inp)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    game<span style="color:#fe8019">.</span>init_board()
+</span></span><span style="display:flex;"><span>    cls()
+</span></span><span style="display:flex;"><span>    game<span style="color:#fe8019">.</span>display()
+</span></span><span style="display:flex;"><span>    <span style="color:#fe8019">while</span> game<span style="color:#fe8019">.</span>active:
+</span></span><span style="display:flex;"><span>        game<span style="color:#fe8019">.</span>player_turn()
+</span></span><span style="display:flex;"><span>        cls()
+</span></span><span style="display:flex;"><span>        game<span style="color:#fe8019">.</span>display()
+</span></span><span style="display:flex;"><span>        <span style="color:#fe8019">if</span> (game<span style="color:#fe8019">.</span>dia_check() <span style="color:#fe8019">or</span> game<span style="color:#fe8019">.</span>col_check() <span style="color:#fe8019">or</span> game<span style="color:#fe8019">.</span>row_check()):
+</span></span><span style="display:flex;"><span>            game<span style="color:#fe8019">.</span>active <span style="color:#fe8019">=</span> <span style="color:#fe8019">False</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#fabd2f">print</span>(<span style="color:#b8bb26">&#34;winner : &#34;</span> <span style="color:#fe8019">+</span> game<span style="color:#fe8019">.</span>players[<span style="color:#d3869b">0</span>])
+</span></span><span style="display:flex;"><span>        game<span style="color:#fe8019">.</span>players<span style="color:#fe8019">.</span>reverse()
+</span></span></code></pre></div><p>I completed my goal of making the game with cleaner, more &ldquo;pythonic&rdquo; code. I removed all of the global vars and had a great time spamming for j and i loops.
+You might have noticed I carried over my magical board rendering method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    [self<span style="color:#fe8019">.</span>board[x:x <span style="color:#fe8019">+</span> self<span style="color:#fe8019">.</span>size] <span style="color:#fe8019">for</span> x <span style="color:#fe8019">in</span> <span style="color:#fabd2f">range</span>(<span style="color:#d3869b">0</span>, (self<span style="color:#fe8019">.</span>size) <span style="color:#fe8019">**</span><span style="color:#d3869b">2</span>, self<span style="color:#fe8019">.</span>size)]
+</span></span></code></pre></div><p>Since the line was never hard coded on any set values. Building the new source code with this line as the base was a relatively easy task.</p>
+<h2 id="what-i-learned">What I learned</h2>
+<p>Is some times, it&rsquo;s better to cut your losses and start over. While this is not the first nor the last time I spent a lot of time on a pointless task, it is good to look at a relatively harmless example of stupidity and learn from it. At some point, you will get better, it will be a long and hard road, but you will make it.</p>
+<p>&lt;3</p>
+<p>blessings,
+Isayas</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

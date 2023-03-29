@@ -1,0 +1,49 @@
+.toggle-container {
+  display: flex;
+  justify-content: left;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,.15);
+}
+.post-list-container {
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,.15);
+}
+.posts-list {
+  padding: 0;
+}
+
+.posts-list-item {
+  list-style: none;
+  padding: 0.4em 0;
+  display: flex;
+  justify-content: left;
+  &:not(:last-child) {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  }
+}
+.post-information-container{
+  display: flex;
+  flex-direction: column;
+}
+.posts-list-item-description {
+  display: block;
+  font-size: 0.8em;
+}
+.posts-list-item-description svg {
+    color: $Cyan;
+}
+.posts-list-item-title {
+  color: $primary-color;
+}
+
+.posts-list-item-title:hover {
+  color: $Orange ;
+}
+.post-image {
+  width: 30vh;
+  height: 30vh;
+}
+.wrapping-image {
+  float: left;
+  margin: 30px 12px 3px 4px;
+  border: 4px solid $lightest-color;
+  display: flex;
+}

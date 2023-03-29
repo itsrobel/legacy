@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on Robel Schwarz</title>
+    <link>https://itsrobel.tech/tags/python/</link>
+    <description>Recent content in python on Robel Schwarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://itsrobel.tech/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pythonic activies - tik tac toe</title>
+      <link>https://itsrobel.tech/posts/python-scripts-1/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://itsrobel.tech/posts/python-scripts-1/</guid>
+      <description>A while ago during my first year of comp sci, I was tasked to create a game of tik tac toe. While not a complex procedure, I decided to make it more complicated for myself. In challenging my younger self, I went through 3 development phases.
+The base game I do not have the files for the base game; if I find the Replit file, I will make sure to fill this section of the story.</description>
+    </item>
+    
+    <item>
+      <title>Create A Useless AI</title>
+      <link>https://itsrobel.tech/posts/hollow/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://itsrobel.tech/posts/hollow/</guid>
+      <description>Introduction RoughlyRoughtly six months ago, I started on a journey. A journey journeyjourneyjourny of epic sword fights, great victories, and even more significant losses
+For some context, my school partakes in a statewide program STLP The Program itself is a massive science fair/club; you can read more about it in the link above
+The plan It was simple, make an app that is helpful to the student population The Idea Was to make an app for mental help; the goal was a Therapy app that students could download on their phones or access using our web page.</description>
+    </item>
+    
+  </channel>
+</rss>

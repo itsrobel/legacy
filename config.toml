@@ -1,0 +1,92 @@
+# baseURL = 'http://example.org/'
+# languageCode = 'en-us'
+# title = 'My New Hugo Site'
+# theme = "m10c"
+
+
+baseURL = "https://itsrobel.tech"
+title = "Ghost of Dreams"
+theme = "m10c"
+paginate =4
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+
+
+[params]
+  avatar = "/bg.jpg"
+  author = "Robel Schwarz"
+  description = " If everyone is thinking alike, then no one is thinking at all. -  John F. Kennedy"
+  menu_item_separator = " - "
+  background = "/bg.jpg"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/itsrobel"
+  [[params.social]]
+    icon = "instagram"
+    name = "Instagram"
+    url = "https://instagram.com/itsrobel_black"
+  [[params.social]]
+    icon = "mail"
+    name = "Email"
+    url = "mailto:me@itsrobel.tech"
+
+  # Dracula theme
+  #[params.style]
+  #  darkestColor = "#282a36"
+  #  darkColor = "#44475a"
+  #  lightColor = "#d6d6d6"
+  #  lightestColor = "#bd93f9"
+  #  primaryColor = "#50fa7b"
+  #  Foreground = "#f8f8f2"
+  #  softBlue =	"#6272a4"	
+  #  Cyan =	"#8be9fd"	
+  # Green =	"#50fa7b"
+  #  Orange =	"#ffb86c"	
+  #  Pink =	"#ff79c6"
+  #  Purple =	"#bd93f9"	
+  #  Red	 = "#ff5555"	
+  #  Yellow =	"#f1fa8c"
+
+
+  # Gruvbox theme, the only colors that need to be actually defind are the light colors, the rest are for the compiler to not duck me
+  [params.style]
+    darkestColor = "#282828"
+    darkColor = "#282828"
+    lightColor = "#d6d6d6"
+    lightestColor = "#d3869b"
+    primaryColor = "#83a598"
+    Foreground = "#ebdbb2"
+    Cyan =	"#8be9fd"
+    Green =	"#50fa7b"
+    Orange =	"#ffb86c"
+    Pink =	"#ff79c6"
+    Purple =	"#bd93f9"
+    Red	 = "#ff5555"
+    Yellow =	"#f1fa8c"
+
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "gruvbox"
+    tabWidth = 4

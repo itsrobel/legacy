@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nodejs on Robel Schwarz</title>
+    <link>https://itsrobel.tech/tags/nodejs/</link>
+    <description>Recent content in nodejs on Robel Schwarz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 21 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://itsrobel.tech/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create A Useless AI</title>
+      <link>https://itsrobel.tech/posts/hollow/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://itsrobel.tech/posts/hollow/</guid>
+      <description>Introduction RoughlyRoughtly six months ago, I started on a journey. A journey journeyjourneyjourny of epic sword fights, great victories, and even more significant losses
+For some context, my school partakes in a statewide program STLP The Program itself is a massive science fair/club; you can read more about it in the link above
+The plan It was simple, make an app that is helpful to the student population The Idea Was to make an app for mental help; the goal was a Therapy app that students could download on their phones or access using our web page.</description>
+    </item>
+    
+  </channel>
+</rss>

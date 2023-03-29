@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  //font-family: 'Yanone Kaffeesatz';
+  background: $darkest-color;
+  color: $light-color;
+  line-height: 1.429;
+}
+
+h1, h4, h5, h6 {
+  color: $lightest-color;
+}
+
+h2 {
+  color: $Cyan;
+}
+h3 {
+  color: $Orange;
+}
+h4 {
+  color: $Purple;
+}
+em {
+  color: $Orange;
+}
+// li {
+//   color: $Cyan;
+// }
+a {
+  color: $Purple;
+  transition: color 0.35s;
+  text-decoration: none;
+
+  &:hover {
+    color: $lightest-color;
+  }
+
+}
+
+// a img {
+//   border-color: $Red;
+//   // color: $Red;
+// }
+// Browsers seem to use a smaller default font-size with monospaced code
+// blocks (like 80% of the size of normal text) and that looks pretty bad with
+// small inline code-blocks in the middle of normal text (mainly because of
+// the very noticeable difference in x-height). This CSS corrects that problem.
+code {
+  font-family: monospace,monospace;
+  font-size: 1em;
+  color: rgba($light-color, .8);
+}
+
+pre {
+  font-size: 1rem;
+  line-height: 1.2em;
+  margin: 0;
+  overflow: auto;
+  background-color: #282828 !important;
+  // A larger monospaced block of text (that isn't mixed with normal text)
+  // generally looks heavier than normal text with the same font size. For this
+  // reason using a smaller monospaced font size makes sense in this situation.
+  code {
+    font-size: .8em;
+  }
+}
+
+::selection {
+  background: rgba($light-color, .25);
+}
+::-moz-selection {
+  background: rgba($light-color, .25);
+}

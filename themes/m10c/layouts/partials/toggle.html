@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+
+  <style type="text/css">
+.btn {
+    background: transparent;
+    border-block-color: transparent;
+    border-color: transparent;
+  }
+  .dark-toggle-check {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .light {
+    opacity: 0;
+    position: absolute;
+  }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+var body = document.body;
+  var switcher = document.getElementsByClassName("btn")[0];
+  var star = document.createElement("img");
+  var moon = document.createElement("img");
+  //   star.src = "./sun-solid.svg";
+  //   moon.src = "./moon-solid.svg";
+  moon.src = "/moon-solid.svg";
+  star.src = "/sun-solid.png";
+  moon.height = 32;
+  star.height = 32;
+  moon.style.fill = "#d3869b";
+  ld = [moon, star];
+  switcher.appendChild(ld[0]);
+  switcher.addEventListener("click", function () {
+    this.removeChild(ld[0]);
+    this.appendChild(ld[1]);
+    ld.reverse();
+    this.classList.toggle("toggle");
+    //If dark mode is selected
+    if (this.classList.contains("toggle")) {
+      body.classList.add("dark-mode");
+      localStorage.setItem("darkMode", "true");
+    } else {
+      body.classList.remove("dark-mode");
+      setTimeout(function () {
+        localStorage.removeItem("darkMode");
+      }, 100);
+    }
+  });
+
+  //Check Storage. Keep user preference on page reload
+  if (localStorage.getItem("darkMode")) {
+    //body.classList.add('dark-mode');
+    // switcher.classList.add('js-toggle--checked');
+    body.classList.add("dark-mode");
+  }
+  </script>
+</body>
+</html>
