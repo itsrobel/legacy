@@ -2,7 +2,7 @@
 title =  "A Orthodox christmas"
 tags = ["Religion", "Philosophy"]
 date = "2023-01-10"
-author = "Robel Schwarz"
+author = "Amar Shavir"
 image="/orthodox.png"
 +++
 

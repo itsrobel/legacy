@@ -2,13 +2,13 @@
 title = "Development"
 tags = ["philosophy"]
 date = "2022-08-22"
-author = "Robel Schwarz"
+author = "Amar Shavir"
 +++
 ## Introduction
 
 When writing, I am between the ages of seventeen and eighteen. Within all scientific and social metrics, I am still very much in my development. That said, please do not dismiss what I say; my words are the construct of experiences from the men who have gone before me and me.
 
-Before I begin my long-formatted rant, I would like to share some of my stories to give an idea of where I come from, Ideologically and politically. I was Born Robel Istephanos as a Wolatia Ethiopian. I was adopted by a family from the United States in a county with a low minority population. While being one of the few black people in school did not directly affect my education, the circumstance did not aid my mental health. I was raised under the cultural subtext of being white but with the systemic and societal expectation of being black. Under this pretense, I have hated who I am for most of my life. One of the most complicated challenges I wake up with is figuring out who I am. I will stand in this world as an outsider; I now find comfort in the isolation of a wandering mind. I am Robel Schwarz.   
+Before I begin my long-formatted rant, I would like to share some of my stories to give an idea of where I come from, Ideologically and politically. I was Born Robel Istephanos as a Wolatia Ethiopian. I was adopted by a family from the United States in a county with a low minority population. While being one of the few black people in school did not directly affect my education, the circumstance did not aid my mental health. I was raised under the cultural subtext of being white but with the systemic and societal expectation of being black. Under this pretense, I have hated who I am for most of my life. One of the most complicated challenges I wake up with is figuring out who I am. I will stand in this world as an outsider; I now find comfort in the isolation of a wandering mind. I am Amar Shavir.   
 
 
 ## Development

@@ -4,8 +4,8 @@
 # theme = "m10c"
 
 
-baseURL = "https://itsrobel.tech"
-title = "Djinn Dreams"
+baseURL = "https://djinndream.me"
+title = "Djinn Dream"
 theme = "m10c"
 paginate =4
 
@@ -30,7 +30,7 @@ paginate =4
 
 [params]
   avatar = "/bg.jpg"
-  author = "Robel Schwarz"
+  author = "Amar Shavir"
   description = " If everyone is thinking alike, then no one is thinking at all. -  John F. Kennedy"
   menu_item_separator = " - "
   background = "/bg.jpg"
@@ -38,14 +38,14 @@ paginate =4
     icon = "github"
     name = "Github"
     url = "https://github.com/itsrobel"
-  [[params.social]]
-    icon = "instagram"
-    name = "Instagram"
-    url = "https://instagram.com/itsrobel_black"
+  # [[params.social]]
+  #   icon = "instagram"
+  #   name = "Instagram"
+  #   url = "https://instagram.com/itsrobel_black"
   [[params.social]]
     icon = "mail"
     name = "Email"
-    url = "mailto:me@itsrobel.tech"
+    url = "mailto:amar@djinndream.me"
 
   # Dracula theme
   #[params.style]

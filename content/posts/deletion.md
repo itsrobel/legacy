@@ -3,7 +3,7 @@ title = "War on Morality"
 image = '/moral.jpg'
 tags = ["religion", "politics","philosophy"]
 date = "2023-01-26"
-author = "Robel Schwarz"
+author = "Amar Shavir"
 +++
 
 

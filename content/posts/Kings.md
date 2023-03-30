@@ -2,7 +2,7 @@
 title =  "Kings"
 tags = ["philosophy"]
 date = "2023-02-26"
-author = "Robel Schwarz"
+author = "Amar Shavir"
 image = "/kings.webp"
 +++
 
