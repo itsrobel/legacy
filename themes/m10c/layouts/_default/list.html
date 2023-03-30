@@ -9,18 +9,18 @@
         <li class="posts-list-item">
           <div class="post-information-container">
 
+          </div>
+          <div>
       {{ if .Params.image}}
       <a href="{{.Permalink}}" >
 
       <div class="wrapping-image">
-        <img class="post-image" src="{{ .Params.image }}"/>
+        <img class="post-imae" src="{{ .Params.image }}"/>
 
 
       </div>
       </a>
       {{ end }}
-          </div>
-          <div>
             <a href="{{ .Permalink }}">
 
             <h1 class="posts-list-item-title" >{{ .Title }}</h1>
