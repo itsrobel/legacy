@@ -10,7 +10,7 @@
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
-    <!-- <link rel="stylesheet" href="{{ relURL "/Users/amadeus/Documents/Hugo/itsrobel.github.io/resources/_gen/assets/scss/css/main.scss_e86386c8bae1cd02295de71a1be078d6.json" }}"> -->
+    <link rel="stylesheet" href="{{ relURL "/Users/amadeus/Documents/Hugo/itsrobel.github.io/resources/_gen/assets/scss/css/main.scss_e86386c8bae1cd02295de71a1be078d6.json" }}">
 
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
