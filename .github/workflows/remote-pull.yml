@@ -4,7 +4,17 @@ jobs:
   ping-pong:
 
     runs-on: ubuntu-latest
+    
     steps:
-      - name: ping
-        run: git submodule update --remote --merge && echo "Submodule Update <3"
+    - name: Git checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: ping
+      run: |
+        git --version
+        git submodule update --remote --merge
+        git config user.name "GitHub Actions Bot"
+        git config user.email "amar@djinndream.me"
+        echo "Submodule Update <3"
      
