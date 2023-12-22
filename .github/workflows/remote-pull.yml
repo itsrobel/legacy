@@ -11,7 +11,7 @@ jobs:
       with:
         submodules: true
     - name: Update submodule
-      run: git submodule update --init --recursive
+      run: git submodule update --remote --recursive
     - name: Commit and push changes
       run: |
           git config --global user.name "GitHub Actions"
