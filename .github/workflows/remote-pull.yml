@@ -15,7 +15,8 @@ jobs:
         git --version
         git config user.name "GitHub Actions Bot"
         git config user.email "amar@djinndream.me"
-        git -C content/ checkout main
+        cd content
+        git checkout main
         git add .
         git commit -m "checkout main"
         echo "Submodule Update <3"
