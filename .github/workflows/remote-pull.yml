@@ -7,14 +7,12 @@ jobs:
     
     steps:
     - name: Git checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      uses: actions/checkout@v2
     - name: Update submodule
-      run: git submodule update --remote --recursive
+      run: git submodule update --init --recursive
     - name: Commit and push changes
       run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git commit -am "Update submodule"
+          git commit -am "Update submodule
           git push
