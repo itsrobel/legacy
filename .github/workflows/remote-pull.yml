@@ -9,4 +9,5 @@ jobs:
     - name: Git checkout
       uses: actions/checkout@v4
       with:
-        path: content
+        fetch-depth: 0
+    - run: git checkout HEAD^
