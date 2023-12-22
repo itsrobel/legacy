@@ -15,8 +15,8 @@ jobs:
         git --version
         git config user.name "GitHub Actions Bot"
         git config user.email "amar@djinndream.me"
-        git submodule update --remote --merge
-        cd content
-        git pull
+        git -C content/ checkout main
+        git add .
+        git commit -m "checkout main"
         echo "Submodule Update <3"
      
