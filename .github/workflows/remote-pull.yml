@@ -7,9 +7,9 @@ jobs:
     
     steps:
     - name: Git checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
-        fetch-depth: '0'
+        path: content
     - name: ping
       run: |
         git --version
