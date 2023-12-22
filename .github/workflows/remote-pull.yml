@@ -17,8 +17,5 @@ jobs:
         git config user.email "amar@djinndream.me"
         cd content
         git checkout main
-        cd ../
-        git add .
-        git commit -m "checkout main"
         echo "Submodule Update <3"
      
