@@ -10,13 +10,3 @@ jobs:
       uses: actions/checkout@v4
       with:
         path: content
-    - name: ping
-      run: |
-        git --version
-        git config user.name "GitHub Actions Bot"
-        git config user.email "amar@djinndream.me"
-        git clone https://github.com/amarshavir/content
-        git add .
-        git commit -m "content update"
-        echo "Latest Content added"
-     
